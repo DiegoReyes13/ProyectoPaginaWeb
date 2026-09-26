@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="icon" href="./Imagenes/favicon.ico">
+  <title>Portafolio Personal</title>
+</head>
+<body>
+  <header class ="header">
+    <img id="logoMomo" src="./Imagenes/descarga.jpg"/>
+    <h1>Portafolio Personal</h1>
+  </header>
+
+  <nav class="nav">
+  <ul>
+    <li>
+      <a href=#personal>Personal</a>
+      <a href=#aca>Academico</a>
+      <a href=#laboral>Laboral</a>
+      <a href=#footer>Contacto</a>
+    </li>
+  </ul>
+</nav>
+
+  <section class="sectionInicio">
+    <h1>Bienvenidx</h1>
+    <p>Hoy conoceras un poco mas sobre mi</p>
+    <p> Comediante / Idolo de masas / Vendedor de bolis</p>
+    <div class="indicador">
+      <p>soy ese</p>
+    <span>↓</span>
+  </div>
+    <img src="./Imagenes/2.jpg"/>
+  </section>
+
+  <hr class="divisor">
+
+  <section id="personal" class = "sectionAcerca">
+    <h1>Acerca de mi</h1>    
+    <article class="persona">
+      <div class="columnaIzquierda">
+    <img src="./Imagenes/4.jpg"/>
+    <div class="reproductor">
+      <p class="cancion">Invisible</p>
+      <p class="artista">Duran Duran</p>
+      <input type="range" id="barraProgreso" min="0" max="100" value="0">
+      <div class="controles">
+        <button id="playBtn">▶</button>
+      </div>
+      <audio id="miAudio" src="./Audio/tuCancion.mp3"></audio>
+    </div>
+  </div>
+
+      <div>
+      <p id="titulo">Mis datos personales</p>
+      <p id="content">Nombre: Diego<br>
+                      Edad: 19 años <br>
+                      Quien soy?<br><br>
+                      Soy alguien muy apasionado por mis gustos y las cosas que amo, creci bastante solo por lo que 
+                      me crie rodeado principalmente de peliculas, series, comics y videojuegos lo que me ayudo a
+                      descrubir mis mas grandes pasiones, pero tambien me hizo alguien sensible,timido e inseguro, 
+                      pese a eso he podido desarrollarme de buena manera en el mundo y tener una vision sumamente 
+                      optimista de el.<br><br>
+                      Hago mi mayor esfuerzo por lo y los que quiero.
+                      </p>
+      </div>
+      
+      <aside>
+        Las cosas que me gustan:<br><br>
+        <ul id="cosas">
+          <li>Spider-man</li>
+          <li>Twice</li>
+          <li>Star wars</li>
+          <li>The legend of zelda</li>
+          <li>Michael Jackson</li>
+          <li>Full Metal Alchemist</li>
+          <li>Marcianos</li>
+        </ul>
+      </aside>
+    
+
+
+    </section>
+
+    <hr class="divisor">
+  
+    <section id= "aca" class = "sectionAca">   
+    <article class="academico">
+      <div>
+      <p id="titulo">Mis datos academicos</p>
+      <p id="content">Curse la primaria en la primaria Maria Goretti mientras que la secundaria y el bachillerato lo curse 
+                      en la Comercial Bancaria, nunca tuve un desempeño destacable, pero fue en mi desarrollo durante la 
+                      secundaria y preparatoria donde descubri mi gusto por la tecnologia, lo que me llevo a explorar distintas
+                      areas y tomar cursos de diversas materias como robotica, programacion, electronica, etc.<br><br>
+                      Todo eso me llevo a estar estudiando ahora mismo una carrera en desarrollo de software C:
+
+                      </p>
+      </div>
+      <div class ="galeria">
+        <img id="im1"src="./Imagenes/5.jpg"/>
+        <img id="im2" src="./Imagenes/6.jpg"/>
+      </div>
+  
+
+  </section>
+
+  <hr class="divisor">
+
+  <section id="laboral" class = "sectionChamba">   
+    <article class="chamba">
+      <div class ="galeria">
+        <img id="im6"src="./Imagenes/5.jpg"/>
+        <img id="im7" src="./Imagenes/6.jpg"/>
+      </div>
+      <div>
+      <p id="titulo">Mis datos laborales</p>
+      <p id="content">No he tenido trabajos formales, solo emprendimientos <br>
+                      pero aun asi soy una cosa pero Baarbara
+                      </p>
+      </div>
+  
+
+  </section>
+
+</body>
+
+<footer id="footer" class="footerContacto">
+  <h1>Contacto</h1>
+  <form class="formularioContacto">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="email">Correo</label>
+    <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aqui..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</footer>
+
+</html>
